@@ -7,7 +7,7 @@
 body {
     display: grid;
     grid-template-columns: minmax(190px, .9fr) 4fr;
-    grid-template-rows: minmax(100px, 15%) 1fr minmax(30px, 8%);
+    grid-template-rows: minmax(100px, 15%) 1fr minmax(20px, 4%);
     height: 100vh;
     gap: 2px;
     font-size: 16px;
@@ -215,17 +215,21 @@ main h3 {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.container p {
+.announcements .container p {
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(200, 200, 200, 0.8);
 }
 
-.container p:last-of-type {
+.announcements .container p:last-of-type {
     padding-bottom: 0;
     border-bottom: none;
 }
 
-.trending img {
+.announcements {
+    text-align: center;
+}
+
+.trendy img {
     height: 35px;
     border-radius: 50%;
     margin-right: 10px;
@@ -233,7 +237,9 @@ main h3 {
 
 .trendy {
     display: flex;
-    justify-content: center;
+
+    width: 100%;
+    
 
 }
 
@@ -244,6 +250,18 @@ main h3 {
     color: gray;
 }
 
+.announcements.trend.p {
+    border-bottom: none;
+}
+
 footer {
-    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;   
+}
+
+footer a {
+    color: gray;
+    margin-right: 10px;
 }
